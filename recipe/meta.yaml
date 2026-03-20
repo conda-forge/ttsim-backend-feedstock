@@ -1,5 +1,5 @@
 {% set name = "ttsim-backend" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ttsim_backend-{{ version }}.tar.gz
-  sha256: bb363acd40bca69e82739190df43731ec2118f90f730ae37724cdb76117d591a
+  sha256: 80e96fbc8a7c1ea112d151b64c2808693c32575828cc2f5cbcdeb0bdc3988b63
 
 build:
   noarch: python
@@ -23,15 +23,17 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - dags >=0.4.1
+    - dags >=0.5.1
     - ipywidgets
+    - python-kaleido >=1.1
     - networkx >=3.5
     - numpy_groupies
     - numpy
     - openpyxl
     - optree >=0.16.0
-    - pandas
-    - plotly >=6.2.0
+    - pandas >=3
+    - plotly >=6.5
+    - portion
     - pygments
     - pygraphviz
     - pytest
