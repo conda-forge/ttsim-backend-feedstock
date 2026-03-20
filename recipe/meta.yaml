@@ -32,6 +32,7 @@ requirements:
     - optree >=0.16.0
     - pandas
     - plotly >=6.2.0
+    - portion
     - pygments
     - pygraphviz
     - pytest
