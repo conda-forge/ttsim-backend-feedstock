@@ -25,7 +25,7 @@ requirements:
     - python >={{ python_min }}
     - dags >=0.5.1
     - ipywidgets
-    - kaleido >=1.1
+    - python-kaleido >=1.1
     - networkx >=3.5
     - numpy_groupies
     - numpy
