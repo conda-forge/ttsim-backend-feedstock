@@ -23,15 +23,16 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - dags >=0.4.1
+    - dags >=0.5.1
     - ipywidgets
+    - kaleido >=1.1
     - networkx >=3.5
     - numpy_groupies
     - numpy
     - openpyxl
     - optree >=0.16.0
-    - pandas
-    - plotly >=6.2.0
+    - pandas >=3
+    - plotly >=6.5
     - portion
     - pygments
     - pygraphviz
