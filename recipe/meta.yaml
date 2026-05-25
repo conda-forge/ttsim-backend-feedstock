@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - dags >=0.5.1
+    - dags >=0.6
     - ipywidgets
     - python-kaleido >=1.1
     - networkx >=3.5
