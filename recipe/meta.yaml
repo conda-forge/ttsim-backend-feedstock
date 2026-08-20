@@ -1,5 +1,5 @@
 {% set name = "ttsim-backend" %}
-{% set version = "1.2.1" %}
+{% set version = "1.3.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ttsim_backend-{{ version }}.tar.gz
-  sha256: 5d23d9489e6596fb768a4f48c8150894a37a090e4c8b6a4b89125383114d2294
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/ttsim_backend-{{ version }}.tar.gz
+  sha256: 94e4d937880100b9ec9fef6782fdea14dacb76c3e03aa20080acd688bcfc128c
 
 build:
   noarch: python
