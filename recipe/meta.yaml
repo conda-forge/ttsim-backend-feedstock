@@ -1,5 +1,6 @@
 {% set name = "ttsim-backend" %}
 {% set version = "1.4.0" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -23,9 +24,9 @@ requirements:
   run:
     - python >={{ python_min }}
     - beartype >=0.18
-    - dags >=0.6
+    - dags >=0.7
     - ipywidgets
-    - jaxtyping >=0.3.10
+    - jaxtyping >=0.3.11
     - python-kaleido >=1.1
     - networkx >=3.5
     - numpy_groupies
@@ -33,7 +34,7 @@ requirements:
     - openpyxl
     - optree >=0.16.0
     - pandas >=3
-    - pint >=0.25
+    - pint >=0.25,<0.27
     - plotly >=6.5
     - portion
     - pygments
